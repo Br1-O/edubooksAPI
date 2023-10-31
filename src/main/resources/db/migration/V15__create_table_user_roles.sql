@@ -1,0 +1,1 @@
+CREATE TABLE users_role (id INT auto_increment PRIMARY KEY, role VARCHAR(20));

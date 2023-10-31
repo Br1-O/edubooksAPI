@@ -1,0 +1,31 @@
+spring:
+  #db configuration data
+  datasource:
+    url: jdbc:mysql://localhost/edubooks
+    username: root
+
+  jpa:
+    properties:
+      hibernate:
+        #FOR TESTING ONLY!!!
+        format_sql: true
+    #FOR TESTING ONLY!!!
+    show-sql: true
+
+  data:
+    web:
+      pageable:
+        page-parameter: pagina
+        size-parameter: tamano
+    sort:
+      sort-parameter: orden
+
+server:
+  error:
+    include-stacktrace: never
+
+api:
+  security:
+    secret:
+      ${JWT_SECRET}
+
